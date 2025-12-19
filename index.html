@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<!--Geovana-->
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>D.A. Estruturas Metálicas</title>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="interface">
+
+
+            <!-- LOGO -->
+            <a href="#">
+                <img src="images/logo-100px-removebg.png" alt="Logo" class="logo">
+            </a>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#Sobre">Sobre</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#contato">
+                    <button>Contato</button>
+
+                </a>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+
+
+                <div class="topo-conteudo">
+
+                    <!-- TEXTOS -->
+                    <div class="txt-topo-site">
+                        <h1>SEU PRIMEIRO PROJETO, NOSSA ENGENHARIA EM METAL.</h1>
+                        <p>Empresa especializada em coberturas e estruturas metálicas em geral, trazendo soluções sob
+                            medida.</p>
+
+                        <div class="btn-contato">
+                            <a href="#">
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CARROSSEL EMBAIXO -->
+                    <div class="carrossel">
+                        <div class="slides">
+                            <div class="card"><img src="images/foto1.jpg" alt="Foto 1"></div>
+                            <div class="card"><img src="images/foto2.jpg" alt="Foto 2"></div>
+                            <div class="card"><img src="images/foto3.jpg" alt="Foto 3"></div>
+                            <div class="card"><img src="images/foto4.jpg" alt="Foto 4"></div>
+                            <div class="card"><img src="images/foto5.jpg" alt="Foto 5"></div>
+                            <div class="card"><img src="images/foto6.jpg" alt="Foto 6"></div>
+                            <div class="card"><img src="images/foto7.jpeg" alt="Foto 7"></div>
+                            <div class="card"><img src="images/foto8.jpeg" alt="Foto 8"></div>
+                            <div class="card"><img src="images/foto9.jpeg" alt="Foto 9"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <script>
+        // AUTO-SCROLL SIMPLES
+        const slider = document.querySelector('.carrossel');
+        const velocidade = 0.2; // pixels por frame
+
+        function autoScroll() {
+            slider.scrollLeft += velocidade;
+
+            // volta para o início quando chega no final
+            if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth) {
+                slider.scrollLeft = 0;
+            }
+
+            requestAnimationFrame(autoScroll);
+        }
+
+        autoScroll();
+    </script>
+
+    <!--Lilian-->
+    <section id="Sobre"
+     class="quem-somos">
+        <div class="container">
+            <h2>Quem Somos</h2>
+            <p class="descricao">
+                <p>A D.A Estruturas Metálicas é uma empresa especializada em soluções completas em estruturas metálicas e telhados, oferecendo serviços de alta qualidade, 
+                segurança e durabilidade.</p><br>
+                <p>Quando se trata de telhados ou coberturas, procuramos utilizar os melhores sistemas e trabalhamos sempre com vedações reforçadas, evitando, assim, 
+                vazamentos ou infiltrações.</p><br>
+                <p>Em estruturas metálicas, sejam elas leves ou pesadas, buscamos sempre montar e soldar com os processos corretos, sem pular etapas.
+                Isso garante peças com soldas confiáveis e excelente acabamento.</p><br>
+            </p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Missão</h3>
+                    <p>
+                        Oferecer produtos e serviços de alta qualidade, atendendo às
+                        expectativas dos clientes com ética, eficiência e responsabilidade.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Visão</h3>
+                    <p>
+                        Ser referência no mercado, reconhecida pela inovação,
+                        comprometimento e excelência no atendimento.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Valores</h3>
+                    <p>
+                        Ética, transparência, respeito, inovação, compromisso com
+                        resultados e valorização das pessoas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Bruna-->
+
+<section id="contato" 
+class="contato-secao">
+    <div class="interface"> 
+        <h2>Entre em contato conosco!</h2>
+        
+        <p class="descricao">
+            <h3>Estamos prontos para atender seu projeto em estrutura metálica.</h3> <br>
+            <p> Atendemos em Belo Horizonte e região Metropolitana.</p> <br>  
+            Entre em contato para solicitar um orçamento ou tirar suas dúvidas utilizando os links abaixo:
+        </p>  
+
+
+         <div class="container-botoes">
+            <a href="https://wa.me/553191755763" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                <button class="btn-wpp">WhatsApp</button>
+            </a>
+            
+            <a href="https://www.instagram.com/d_a.estruturas_metalicas/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <button class="btn-insta">Instagram</button>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
