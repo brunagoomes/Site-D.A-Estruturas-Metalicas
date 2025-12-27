@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/servicos.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/about.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Landing page</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <i id="nav_logo">D.A. ESTRUTURAS</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services">Serviços</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Contato
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services">Serviços</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Contato
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">SEU PRIMEIRO PROJETO, NOSSA ENGENHARIA EM
+                    <span>METAL</span>
+                </h1>
+
+                <p class="description">Empresa especializada em coberturas e estruturas metálicas em geral, trazendo
+                    soluções sob medida.</p>
+
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">
+                        Confira nossos serviços
+                    </a>
+
+                    <a href="tel:+31912345678" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (31) 91234-5678
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href=""> <!--criar um script para jogar pro wpp direto-->
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href=""> <!--criar um script para jogar pro wpp direto-->
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="images/GuardaCorpo1-resize.png" alt="">
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">Sobre Nós</h2>
+                <h3 class="section-subtitle">D.A Estruturas Metálicas</h3>
+
+                <p class="about-description">
+                    Somos uma empresa especializada em soluções completas em estruturas metálicas e telhados,
+                    oferecendo serviços de alta qualidade, segurança e durabilidade.
+                    Trabalhamos com vedações reforçadas para evitar infiltrações e processos de soldagem
+                    rigorosos para garantir um acabamento impecável.
+                </p>
+
+                <div class="about-cards">
+                    <div class="about-card">
+                        <span class="material-symbols-outlined icon">rocket_launch</span>
+                        <h3>Missão</h3>
+                        <p>Oferecer serviços de alta qualidade, atendendo às expectativas dos clientes com ética e
+                            responsabilidade.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <span class="material-symbols-outlined icon">visibility</span>
+                        <h3>Visão</h3>
+                        <p>Ser referência no mercado, reconhecida pela inovação e excelência no atendimento em
+                            estruturas metálicas.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <span class="material-symbols-outlined icon">favorite</span>
+                        <h3>Valores</h3>
+                        <p>Ética, transparência, respeito, inovação e compromisso total com a segurança e resultados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2 class="section-title">Serviços</h2>
+            <h3 class="section-subtitle">Nossos serviços</h3>
+
+            <div id="estruturas">
+                <div class="estrutura">
+
+                    <div class="slider-wrapper">
+                        <span class="material-symbols-outlined btn left">arrow_back_ios</span>
+                        <div class="slider">
+                            <div class="slides"><img
+                                    src="images/Corrimão, Guarda Corpo, Barra de Apoio e Escadas_/corrimao (3).jpeg"
+                                    alt=""></div>
+                            <div class="slides"><img
+                                    src="images/Corrimão, Guarda Corpo, Barra de Apoio e Escadas_/Corrimão.jpg" alt="">
+                            </div>
+                            <div class="slides"><img
+                                    src="images/Corrimão, Guarda Corpo, Barra de Apoio e Escadas_/GuardaCorpo.jpg"
+                                    alt=""></div>
+                            <div class="dots"></div>
+                        </div>
+                        <span class="material-symbols-outlined btn right">arrow_forward_ios</span>
+                    </div>
+
+                    <h3 class="estrutura-title">Corrimãos e Guarda Corpos</h3>
+                    <span class="estrutura-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+                </div>
+
+
+
+                <div class="estrutura">
+
+                    <div class="slider-wrapper">
+                        <span class="material-symbols-outlined btn left">arrow_back_ios</span>
+                        <div class="slider">
+                            <div class="slides"><img
+                                    src="images/Corrimão, Guarda Corpo, Barra de Apoio e Escadas_/BarraDeApoio1.1.jpg"
+                                    alt=""></div>
+                            <div class="slides"><img src="images/Cobertura-resize.jpg" alt=""></div>
+                            <div class="dots"></div>
+                        </div>
+                        <span class="material-symbols-outlined btn right">arrow_forward_ios</span>
+                    </div>
+
+                    <h3 class="estrutura-title">Telhados</h3>
+                    <span class="estrutura-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+                </div>
+
+                <div class="estrutura">
+
+                    <div class="slider-wrapper">
+                        <span class="material-symbols-outlined btn left">arrow_back_ios</span>
+                        <div class="slider">
+                            <div class="slides"><img
+                                    src="images/Corrimão, Guarda Corpo, Barra de Apoio e Escadas_/BarraDeApoio1.1.jpg"
+                                    alt=""></div>
+                            <div class="slides"><img src="images/Cobertura-resize.jpg" alt=""></div>
+                            <div class="dots"></div>
+                        </div>
+                        <span class="material-symbols-outlined btn right">arrow_forward_ios</span>
+                    </div>
+
+                    <h3 class="estrutura-title">Coberturas</h3>
+                    <span class="estrutura-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="images/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy; 2025
+            </span>
+
+            <div class="social-media-buttons">
+                <a href=""> <!--criar um script para jogar pro wpp direto-->
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href=""> <!--criar um script para jogar pro wpp direto-->
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript/script.js" defer></script>
+
+</body>
+
+</html>

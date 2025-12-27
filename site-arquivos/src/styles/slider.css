@@ -1,0 +1,40 @@
+/* Mudamos de #slider para .slider-wrapper */
+.slider-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.slider {
+    /* Aumentamos a altura para acompanhar a largura maior do card */
+    height: 250px; 
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+}
+
+.slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease;
+}
+
+.slides img {
+    width: 100%;
+    height: 250px; /* Deve ser a mesma altura definida acima */
+    margin: 0;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.btn {
+    font-size: 1.8rem;
+    color: #888;
+    cursor: pointer;
+}
