@@ -1,0 +1,111 @@
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 8%;
+}
+
+#estruturas {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Agora os cards ficam um embaixo do outro */
+    gap: 80px; /* Espaço entre as linhas */
+    margin-top: 40px;
+}
+
+.estrutura {
+    display: flex;
+    flex-direction: row; /* Mantém o zigue-zague que fizemos */
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 25px;
+    
+    /* Um fundo levemente diferente do fundo do site para destacar o bloco */
+    background: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(5px); /* Efeito de vidro suave */
+    border: 1px solid rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+/* A mágica do zigue-zague: Inverte a ordem apenas nos itens pares (2, 4, 6...) */
+.estrutura:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.slider-wrapper {
+    flex: 1; /* O slider ocupa metade do espaço */
+    max-width: 550px; /* Limite para o slider não ficar gigante */
+}
+
+.estrutura-content {
+    flex: 1;
+}
+
+/* Ajuste para o texto nas linhas invertidas */
+.estrutura:nth-child(even) .estrutura-content {
+    text-align: right;
+}
+
+.estrutura-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #1d1d1d;
+    margin-bottom: 20px;
+    position: relative;
+    
+    /* ESTES DOIS SÃO A CHAVE: */
+    display: inline-block; /* Faz a "caixa" do título ter o tamanho exato do texto */
+    width: fit-content;    /* Garante que ele não estique para os lados */
+}
+
+/* A barrinha (linha cinza) */
+.estrutura-title::after {
+    content: '';
+    display: block;
+    width: 100%; /* Agora 100% significa "100% da largura do texto" */
+    height: 4px;
+    background-color: darkgray;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+.estrutura:nth-child(even) .estrutura-title::after {
+    margin-left: auto;
+}
+
+.estrutura-description {
+    font-size: 1.35rem;
+    line-height: 1.6;
+    color: #434343;
+}
+
+/* --- AJUSTE PARA MOBILE --- */
+@media screen and (max-width: 900px) {
+    .estrutura, 
+    .estrutura:nth-child(even) { /* Força inclusive as linhas invertidas */
+        flex-direction: column; /* Empilha: Imagem em cima, texto embaixo */
+        gap: 20px;
+        padding: 15px;
+        text-align: center; /* Centraliza o texto no mobile para melhor leitura */
+    }
+
+    .estrutura-title::after {
+        margin: 8px auto 0 auto; /* Centraliza a barrinha do título no mobile */
+    }
+}
+
+
+
+
+
+
+
+/* Deixa o título mais imponente para combinar com a imagem maior */
+
+/* Detalhe visual: barrinha embaixo do título */
+
+
+/* Ajuste para quando for invertido (texto na direita) */
